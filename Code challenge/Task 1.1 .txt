@@ -1,0 +1,22 @@
+*Task 1.1 Reading and Discussion
+
+• What is the output of this program?
+
+v1 size: 0
+v2 size: 4
+v3 size: 4
+
+• Why does v1.size() return 0 after the move?
+
+It is set to zero because std::vector transfers the information from v1 to v3. V1 is set to zero because it no longer has a defined value.
+
+• What does std::move do?
+
+std::move is a cast that converts an lvalue (like v1) into an rvalue. The actual moving happens when the moved object is used in a move constructor 
+or move assignment op
+
+
+
+• Why is v1 still in a valid but unspecified state?
+
+This is a feature of the C++ standard to avoid errors, where v1 can only be used to reassign or delete.
