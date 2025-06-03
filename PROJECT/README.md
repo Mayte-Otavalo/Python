@@ -4,7 +4,7 @@
 ![C++](https://img.shields.io/badge/C++-17-orange)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Naive%20Bayes%20%26%20Linear%20Regression-green)
 
-Project repository for data analysis to identify the relationship between access to drinking water and child malnutrition in Ecuadorian cantons, using **Naive Bayes** and **Linear Regression** models.
+Project repository for data analysis to identify the relationship between access to drinking water and child malnutrition in Ecuadorian cantons, using **Naive Bayes** models.
 
 ## 📌 Description
 This project analyzes data from INEC (National Institute of Statistics and Census of Ecuador) to:
@@ -26,7 +26,7 @@ This project analyzes data from INEC (National Institute of Statistics and Censu
    - Creation of the target variable "Malnutrition" based on risk thresholds.
 2. **Modeling**:
    - **Gaussian Naive Bayes**: Classification of cantons at risk (accuracy: **97.75%**).
-   - **Linear Regression**: Correlation analysis between variables.
+   
 3. **Results**:
    - 32 cantons identified as high risk (e.g., Guayaquil, Manta, Eloy Alfaro).
    - [See confusion matrix and classification report].
