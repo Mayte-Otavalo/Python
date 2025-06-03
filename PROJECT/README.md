@@ -1,34 +1,34 @@
-# Análisis de Desnutrición Infantil y Gestión del Agua en Ecuador
+# Malnutrition Analysis and Water Management in Ecuador
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![C++](https://img.shields.io/badge/C++-17-orange)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Naive%20Bayes%20%26%20Linear%20Regression-green)
 
-Repositorio del proyecto de análisis de datos para identificar la relación entre el acceso a agua potable y la desnutrición infantil en los cantones ecuatorianos, utilizando modelos de **Naive Bayes** y **Regresión Lineal**.
+Project repository for data analysis to identify the relationship between access to drinking water and child malnutrition in Ecuadorian cantons, using **Naive Bayes** and **Linear Regression** models.
 
-## 📌 Descripción
-Este proyecto analiza datos del INEC (Instituto Nacional de Estadística y Censos de Ecuador) para:
-- Identificar cantones con **alto riesgo de desnutrición infantil** debido a la mala gestión del agua.
-- Evaluar la **calidad del servicio de agua potable** (días/horas de servicio, tratamiento, análisis microbiológicos).
-- Clasificar zonas prioritarias para intervención usando **aprendizaje automático**.
+## 📌 Description
+This project analyzes data from INEC (National Institute of Statistics and Census of Ecuador) to:
+- Identify cantons with a **high risk of child malnutrition** due to poor water management.
+- Evaluate the **quality of drinking water services** (service days/hours, treatment, microbiological analysis).
+- Classify priority areas for intervention using **machine learning**.
 
-## 📊 Datos
-- **Fuente**: [INEC - Estadísticas de Agua Potable y Saneamiento (2023)](https://anda.inec.gob.ec/anda/index.php/catalog/1091/get_microdata).
-- **Variables clave**:
-  - Días/horas de servicio de agua (urbano/rural).
-  - Cumplimiento de la norma INEN 1108 (calidad del agua).
-  - Análisis de coliformes fecales y cloro residual.
-  - Volumen de agua no tratada distribuida.
+## 📊 Data
+- **Source**: [INEC - Drinking Water and Sanitation Statistics (2023)](https://anda.inec.gob.ec/anda/index.php/catalog/1091/get_microdata)
+- **Key variables**:
+  - Days/hours of water service (urban/rural).
+  - Compliance with INEN 1108 standard (water quality).
+  - Fecal coliforms and residual chlorine analysis.
+  - Volume of untreated distributed water.
 
-## ⚙️ Metodología
-1. **Preprocesamiento**:
-   - Imputación de valores faltantes (mediana para numéricos, moda para categóricos).
-   - Creación de variable objetivo "Desnutrición" basada en umbrales de riesgo.
-2. **Modelado**:
-   - **Naive Bayes Gaussiano**: Clasificación de cantones en riesgo (precisión: **97.75%**).
-   - **Regresión Lineal**: Análisis de correlación entre variables.
-3. **Resultados**:
-   - 32 cantones identificados con alto riesgo (ej: Guayaquil, Manta, Eloy Alfaro).
-   - [Ver matriz de confusión y reporte de clasificación](./docs/results.md).
+## ⚙️ Methodology
+1. **Preprocessing**:
+   - Imputation of missing values (median for numerical, mode for categorical).
+   - Creation of the target variable "Malnutrition" based on risk thresholds.
+2. **Modeling**:
+   - **Gaussian Naive Bayes**: Classification of cantons at risk (accuracy: **97.75%**).
+   - **Linear Regression**: Correlation analysis between variables.
+3. **Results**:
+   - 32 cantons identified as high risk (e.g., Guayaquil, Manta, Eloy Alfaro).
+   - [See confusion matrix and classification report].
 
-## 📂 Estructura del Repositorio
+## 📂 Repository Structure
